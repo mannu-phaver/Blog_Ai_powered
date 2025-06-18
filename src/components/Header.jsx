@@ -10,7 +10,15 @@ const Header = () => {
                 <img src={assets.star_icon} className='W-25' alt=""/>
             </div>
             <h1 className='text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700'>Your Own <span className='text-primary'>Blogging</span> <br />Platform.</h1>
-            <p className='my-4 sm:my-8 max-w-2x1 m-auto max-sm:text-xs text-gray-500 '> This is Your space for creativity and expression. To share your thoughts and ideas with the world.Whether its one word or a thousand,your story starts right here</p>
+            <p className='my-4 sm:my-8 max-w-2xl m-auto max-sm:text-xs text-gray-500 '> 
+                This is Your space for creativity and expression, 
+                To share your thoughts and ideas with the world.
+                Whether its one word or a thousand,your story starts right here
+                </p>
+                <form className='flex justify-between max-w-1g max-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden'>
+                  <input type="text" placeholder='Search for blogs' required className='w-full pl-4 outline-none'/>
+                  <button type="Submit" className='bg-primary text-white px-8 py-2 m-1.5 rounded hover:scale-105 transition-all cursor-pointer'> Search</button>
+                </form>
         </div>
         <img src={assets.gradientBackground} alt="" className='absolute -top50 -z-1 opacity-50'/>
       
